@@ -154,7 +154,7 @@ time.sleep(1)
 rval, frame = vc.read()
 
 #picture path is where the physical device stores pictures it captures from the webcam
-picture_path = "/greengrass_device_send_pictures/pictures"
+picture_path = ""
 
 while True:
     rval, frame = vc.read()
