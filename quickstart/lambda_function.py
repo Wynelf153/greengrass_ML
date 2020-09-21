@@ -13,7 +13,7 @@ duration = 120
 # In[10]:
 
 #path where model data will be stored after downloaded from AWS S3
-model_path = '/home/godwyn/Documents/greengrass_models'
+model_path = ''
 
 object_string = os.environ['objects'].lower()
 objects = object_string.split('_')
@@ -48,7 +48,7 @@ net_list = [mxnet.gluon.nn.SymbolBlock.imports(json_path, ['data'], params_path,
 threshold = 0.2
 
 #path where the greengrass device stored the pictures
-picture_folder_path = "/greengrass_device_send_pictures/pictures"
+picture_folder_path = ""
 
 def run_model(filename, objects):
     
